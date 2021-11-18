@@ -16,6 +16,7 @@
     --page-title-color: #8258FA;
     --header-background: #F2E0F7;
     --header-item: #CC2EFA;
+    --subtitle: #FA5882;
     --cloud-color: #a33;
     --button-background: #FE2E64;
     --button-background-hover: #FF0040;
@@ -31,6 +32,38 @@ body {
     font-family: var(--standard-font);
     color: var(--font-color);
 }
+
+hr {
+    line-height: 1em;
+    position: relative;
+    outline: 0;
+    border: 0;
+    color: var(--header-item);
+    text-align: center;
+    height: 1.5em;
+    opacity: .5;
+}
+hr:before {
+    content: '';
+    background: linear-gradient(to right, transparent, #CC2EFA, transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+}
+hr:after {
+    position: relative;
+    display: inline-block;
+    color: var(--header-item);
+  
+    padding: 0 .5em;
+    line-height: 1.5em;
+
+    color: var(--header-item);
+    background-color: var(--general-backgroud);
+}
+
 
 #myBtn {
     display: none; /* Hidden by default */
@@ -56,12 +89,8 @@ body {
     transform: scale(1.15);
 }
 
-.habilities li {
-    display: inline;
-}
-
-#cloud-container {
-    height: 500px;
+.cloud-container {
+    height: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,7 +102,8 @@ ul.cloud {
     flex-wrap: wrap;
     justify-content: center;
     line-height: 2.5rem;
-    width: 850px;
+    width: 900px;
+    margin-bottom: 30px;
 }
 
 ul.cloud a {
@@ -124,6 +154,7 @@ ul.cloud a::before {
     background: var(--cloud-color);
     transform: translate(-50%, 0);
     opacity: 0.15;
+    border-radius: 1em;
     transition: width 0.25s;
 }
 
@@ -174,6 +205,7 @@ header {
     color: var(--page-title-color);
     font-size: 28px;
     font-weight: bold;
+    border-left: 5px solid var(--button-background);
 }
 
 .quem-sou {
@@ -239,7 +271,7 @@ header {
     flex-direction: column;
 }
 
-#attribution {
+.attribution {
     text-decoration: none;
     color: var(--font-color);
     font-size: 14px;
@@ -259,13 +291,129 @@ header {
 
 .information-contact:hover {
     background-color: var(--header-background);
+    color: var(--page-title-color);
+    font-weight: bold;
 }
 
-#contact-vector {
+.information-contact a:hover {
+    color: var(--page-title-color);
+}
+
+.vector-themes {
     width: 600px;
     border: 1px solid var(--page-title-color);
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.group-of-skills {
+    max-width: 600px;
+}
+
+.single-skill {
+    font-size: 20px;
+    margin: 20px 0 0 20px;
+    letter-spacing: 0.1rem;
+}
+
+.experiences {
+    max-width: 90vw;
+    padding-left: 30px;
+}
+
+.single-skill h2 {
+    color: var(--subtitle);
+    margin-bottom: 15px;
+}
+
+.single-skill-description {
+    padding: 0 0 15px 15px;
+}
+
+.single-skill-activities {
+    margin: 15px 0;
+    letter-spacing: 0.13em;
+}
+
+.experiences h1 {
+    color: var(--page-title-color);
+    font-size: 36px;
+    margin-bottom: 30px;
+    padding-left: 5px;
+    border-left: 5px solid var(--button-background);
+}
+
+.habilities-button {
+    background-color: var(--header-background);
+    border-radius: 30px;
+    width: 180px;
+    font-family: var(--standard-font);
+    font-size: 20px;
+    color: var(--header-item);
+    margin: 15px 15px 0 0;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+.habilities-button:hover {
+    background-color: var(--button-text-color);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.certifications li::before {
+    content: "📌";
+}
+
+#software-cloud {
+    width: 500px;
+}
+
+.languages-button {
+    background-color: var(--header-background);
+    border-radius: 30px;
+    width: 400px;
+    height: 100px;
+    font-family: var(--standard-font);
+    font-size: 20px;
+    color: var(--header-item);
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+.languages-button:hover {
+    background-color: var(--button-text-color);
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.languages-button:hover::before {
+    content: "📣 ";
+}
+
+.footer {
+    background-color: var(--header-background);
+    width: 100vw;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.footer p {
+    padding: 0 50px;
+    font-size: 20px;
+}
+
+.footer a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--font-color);
+}
+
+.footer a:hover {
+    color: var(--button-background-hover);
+    font-weight: bold;
 }
 
 /* media queries */
