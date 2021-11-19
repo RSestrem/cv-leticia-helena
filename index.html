@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ==== Bootstrap ==== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!-- ==== favicon ==== -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -31,27 +34,42 @@
     <!-- ==== back to top button ==== -->
     <button onclick="topFunction()" id="myBtn" title="Voltar ao Topo da Página"><i class="fas fa-chevron-up"></i></button>
 
-    <header>
-        <div class="flex-container menu">
-            <!-- <h1 id="page-title">Letícia Helena</h1> -->
-            <div><img id="page-title" src="images/Letícia-Helena-_1_.svg" alt="profile picture"></div>
-
+    <header class="navbar navbar-expand-lg">
+        <div class="container-fluid flex-container menu">
+        <!-- <div><h1 id="page-title">Letícia Helena</h1></div> -->
+        <div><img id="page-title" src="images/leticia-helena.png" alt="profile picture"></div>
             <ul id="header-menu-items">
-                <li><a href="#quem-sou">Quem sou</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <li><a href="#educacao">Educação</a></li>
-                <li><a href="#experiencias">Experiências</a></li>
-                <li><a href="#certificacoes">Certificações</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#softwares">Softwares</a></li>
-                <li><a href="#idiomas">Idiomas</a></li>
+                <li>
+                    <a href="#quem-sou">Quem sou</a>
+                </li>
+                <li>
+                    <a href="#contato">Contato</a>
+                </li>
+                <li>
+                    <a href="#educacao">Educação</a>
+                </li>
+                <li>
+                    <a href="#experiencias">Experiências</a>
+                </li>
+                <li>
+                    <a href="#certificacoes">Certificações</a>
+                </li>
+                <li>
+                    <a href="#habilidades">Habilidades</a>
+                </li>
+                <li>
+                    <a href="#softwares">Softwares</a>
+                </li>
+                <li>
+                    <a href="#idiomas">Idiomas</a>
+                </li>
             </ul>
         </div>
     </header>
 
     <div class="flex-container quem-sou">
         <div class="texto-apresentacao">
-            <h1>Quem sou</h1>
+            <h1></i>Quem sou</h1>
             <p>
                 Sou uma profissional dedicada ao aprendizado. Sou licenciada em Filosofia (PUC-PR) e mestre pela mesma área (UFPR), minha formação sempre exigiu determinação e a busca constante por novos aprendizados e desafios. 
             </p>
@@ -338,5 +356,8 @@
 
     <!-- ==== scripts ==== -->
     <script src="script.js"></script>
+
+    <!-- ==== Bootstrap scripts ==== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

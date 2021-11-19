@@ -190,6 +190,10 @@ header .menu {
     justify-content: space-between;
 }
 
+#page-title {
+    width: 350px;
+}
+
 header #header-menu-items {
     display: flex;
     max-width: 70vw;
