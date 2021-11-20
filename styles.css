@@ -185,6 +185,7 @@ nav {
 .texto-apresentacao h1 {
     color: var(--page-title-color);
     font-size: 36px;
+    font-weight: bold;
     margin-bottom: 30px;
     padding-left: 5px;
     border-left: 5px solid var(--button-background);
@@ -218,6 +219,7 @@ nav {
 .contato h1 {
     color: var(--page-title-color);
     font-size: 36px;
+    font-weight: bold;
     margin-bottom: 30px;
     padding-left: 5px;
     border-left: 5px solid var(--button-background);
@@ -288,6 +290,27 @@ nav {
     margin-bottom: 15px;
 }
 
+.modal-button {
+    background-color: var(--button-background);
+    border: transparent;
+    font-size: 100%;
+    color: var(--button-text-color);
+    margin-top: 5%;
+    border-radius: 25px;
+    padding: 2%;
+    transition: transform .3s;
+}
+
+.modal-button:focus {
+    background-color: var(--button-background);
+}
+
+.modal-button:hover {
+    background-color: var(--button-background-hover);
+    color: var(--general-backgroud);
+    transform: scale(1.15);
+}
+
 .single-skill-description {
     padding: 0 0 15px 15px;
 }
@@ -301,6 +324,7 @@ nav {
     color: var(--page-title-color);
     font-size: 36px;
     margin-bottom: 30px;
+    font-weight: bold;
     padding-left: 5px;
     border-left: 5px solid var(--button-background);
 }

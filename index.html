@@ -85,7 +85,7 @@
         </div>
     </nav>
 
-    <div class="flex-container quem-sou">
+    <div id="quem-sou" class="flex-container quem-sou">
         <div class="texto-apresentacao">
             <h1></i>Quem sou</h1>
             <p>
@@ -172,7 +172,7 @@
                     </p>
                 </div>
             </div>
-            
+
             <div class="single-skill">
                 <h2>Mestrado em Filosofia</h2>
 
@@ -185,6 +185,105 @@
                     <p>
                         <strong>Título da Dissertação:</strong> A Antropologia Pragmática como WELTKENNTNIß segundo Immanuel Kant.
                     </p>
+                </div>
+            </div>
+
+            <!-- Button to Open the Modal -->
+            <button
+                type="button"
+                class="btn btn-primary modal-button"
+                data-bs-toggle="modal"
+                data-bs-target="#myModal"
+            >
+                Consulta Rápida de Produções Bibliográficas
+            </button>
+        
+            <!-- The Modal -->
+            <div class="modal" id="myModal">
+                <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                    
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Produção Acadêmica</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                    
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <h5>Artigos completos publicados em periódicos</h5>
+                            <ul>
+                                <li>
+                                    &#x2B50 <strong>OLIVEIRA, L. H. F</strong>. O que é preciso para fazer o mundo? a physische geographie de Immanuel Kant. REVISTA DE FILOSOFÍA Y CIENCIAS, v. 21, p. 47-56, 2020.
+                                </li>
+                            </ul>
+
+                            <p>---</p>
+
+                            <h5>Resumos publicados em anais de congressos</h5>
+                            <ul>
+                                <li>
+                                    &#x2B50 <strong>OLIVEIRA, L. H. F</strong>. Tractatus Lógico-Philosophicus: um primeiro tratamento sobre a estética. In: Encontro Nacional de Pesquisa em Filosofia da UFPR, 2017, Curitiba. Anais de Encontro Nacional de Pesquisa em Filosofia da UFPR. Curitiba: Cadernospetfilosofia, 2017. v. 3. p. 123.
+                                </li>
+                            </ul>
+
+                            <p>---</p>
+
+                            <h5>Apresentações de Trabalho</h5>
+                            <ul>
+                                <li>
+                                    &#x2B50 <strong>OLIVEIRA, L. H. F</strong>. A Psicologia Empírica e a Antropologia de Immanuel Kant. 2021. (Apresentação de Trabalho/Comunicação).
+                                </li>
+                                <li>
+                                    &#x2B50 <strong>OLIVEIRA, L. H. F</strong>. O que é preciso para fazer o mundo? A Physische Geographie de Immanuel Kant. 2019. (Apresentação de Trabalho/Comunicação).
+                                </li>
+                                <li>
+                                    &#x2B50 <strong>OLIVEIRA, L. H. F</strong>. Observações sobre o problema da coisa em si (Ding an Sich) no Idealismo Transcendental de Kant. 2019. (Apresentação de Trabalho/Congresso).
+                                </li>
+                                <li>
+                                    &#x2B50 <strong>OLIVEIRA, L. H. F</strong>. O que o Homem pode fazer de si mesmo: A Antropologia Pragmática kantiana. 2019. (Apresentação de Trabalho/Comunicação).
+                                </li>
+                                <li>
+                                    &#x2B50 <strong>OLIVEIRA, L. H. F</strong>. Teeteto: a influênncia do movimento do no conhecimento. 2017. (Apresentação de Trabalho/Comunicação).
+                                </li>
+                                <li>
+                                    &#x2B50 <strong>OLIVEIRA, L. H. F</strong>. A Importância de 'ver aspectos' em Wittgenstein. 2015. (Apresentação de Trabalho/Seminário).
+                                </li>
+                            </ul>
+
+                            <p>---</p>
+
+                            <h5>Outras produções bibliográficas</h5>
+                            <ul>
+                                <li>
+                                    &#x2B50 <strong>OLIVEIRA, L. H. F</strong>. A Psicologia Empírica e a Antropologia de Immanuel Kant. Londrina 2021 (Resumo).
+                                </li>
+                                <li>
+                                    &#x2B50 <strong>OLIVEIRA, L. H. F</strong>. A Importância de 'ver Aspectos' em Wittgenstein 2015 (Resumo).
+                                </li>
+                            </ul>
+
+                            <p>---</p>
+
+                            <h5>Demais tipos de produção técnica</h5>
+                            <ul>
+                                <li>
+                                    &#x2B50 FIGUEIREDO, V. B. ; <strong>OLIVEIRA, L. H. F</strong> ; LANGER, D. W. ; CORDOVA, F. ; SOARES, L. . Seminários sobre Filosofia Alemã. 2019. (Curso de curta duração ministrado/Extensão).
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button
+                                type="button"
+                                class="btn btn-danger modal-button"
+                                data-bs-dismiss="modal"
+                            >
+                                Fechar
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -372,10 +471,11 @@
         </div>
     </footer>
 
-    <!-- ==== scripts ==== -->
-    <script src="script.js"></script>
-
+    
     <!-- ==== Bootstrap scripts ==== -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- ==== scripts ==== -->
+    <script src="script.js"></script>
 </body>
 </html>
