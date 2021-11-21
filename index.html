@@ -16,10 +16,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Leckerli One -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
 
     <!-- ==== Styles ==== -->
     <link rel="stylesheet" href="styles.css">
@@ -36,7 +32,7 @@
 
     <nav class="sticky-top">
         <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times fa-xs"></i></a>
             <a href="#quem-sou"><i class="fas fa-user"></i> Quem sou</a>
             <a href="#contato"><i class="fas fa-envelope"></i> Contato</a>
             <a href="#educacao"><i class="fas fa-graduation-cap"></i> Educação</a>
@@ -56,7 +52,7 @@
         </span>
     </nav>
 
-    <div id="quem-sou" class="flex-container quem-sou">
+    <div id="quem-sou" class="flex-container">
         <div class="texto-apresentacao">
             <h1></i>Quem sou</h1>
             <p>
@@ -70,15 +66,15 @@
             </p>
         </div>
 
-        <div class="profile-picture-sector">
-            <img id="profile-pic" src="images/profile_pic.png" alt="profile pic">
+        <div>
+            <img class="img-fluid profile-pic" src="images/profile_pic.png" alt="profile pic">
         </div>
     </div>
 
-    <div id="contato" class="flex-container contato">
+    <div id="contato" class="flex-container">
         <div class="attribution-div">
             <a class="attribution" href='https://br.freepik.com/vetores/personagem' target="_blank">Designed by vectorjuice - br.freepik.com</a>
-            <img class="vector-themes" src="images/contact-me.jpg" alt="contact theme">
+            <img class="vector-themes img-fluid" src="images/contact-me.jpg" alt="contact theme">
         </div>
 
         <div class="links-contato">
@@ -87,7 +83,7 @@
             <ul>
                 <li class="information-contact">
                     <a class="contact-list-items" href="mailto:leticiahelenafoliveira@gmail.com">
-                        leticiahelenafoliveira@gmail.com
+                        Gmail
                     </a>
                     <i class="fas fa-envelope"></i>
                 </li>
@@ -121,7 +117,7 @@
         </div>
     </div>
 
-    <div id="educacao" class="flex-container contato">
+    <div id="educacao" class="flex-container">
         <div class="group-of-skills">
             <h1>Educação</h1>
             
@@ -422,12 +418,12 @@
     </div>
 
     <footer>
-        <div class="flex-container footer">
-            <p>&copy; Desenvolvido por: Rodrigo Sestrem</p>
-            <a href="https://www.linkedin.com/in/rodrigo-sestrem" target="_blank"><i class="fab fa-linkedin"></i> Find me on Linkedin <i class="fas fa-external-link-alt"></i></a>
-        </div>
+            <p><i class="far fa-copyright fa-sm"></i> Desenvolvido por: Rodrigo Sestrem</p>
+  
+            <p>
+                <a href="https://www.linkedin.com/in/rodrigo-sestrem" target="_blank"><i class="fab fa-linkedin"></i> Find me on Linkedin <i class="fas fa-external-link-alt"></i></a>
+            </p>
     </footer>
-
     
     <!-- ==== Bootstrap scripts ==== -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
