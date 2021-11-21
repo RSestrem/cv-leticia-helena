@@ -34,55 +34,26 @@
     <!-- ==== back to top button ==== -->
     <button onclick="topFunction()" id="myBtn" title="Voltar ao Topo da Página"><i class="fas fa-chevron-up"></i></button>
 
-    <nav class="navbar sticky-top navbar-expand-lg">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse justify-content-start" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle"
-                            href="#"
-                            id="navbarDropdownMenuLink"
-                            role="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                        >
-                            <i class="fas fa-bars fa-2x"></i>
-                        </a>
-                        <ul id="header-menu-items" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li>
-                                <a class="dropdown-item" href="#quem-sou">Quem sou</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#contato">Contato</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#educacao">Educação</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#experiencias">Experiências</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#certificacoes">Certificações</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#habilidades">Habilidades</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#softwares">Softwares</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#idiomas">Idiomas</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <a class="navbar-brand" href="#"><img id="page-title" src="images/leticia-helena.png" alt="profile picture"></a>
-            </div>
+    <nav class="sticky-top">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#quem-sou"><i class="fas fa-user"></i> Quem sou</a>
+            <a href="#contato"><i class="fas fa-envelope"></i> Contato</a>
+            <a href="#educacao"><i class="fas fa-graduation-cap"></i> Educação</a>
+            <a href="#experiencias"><i class="fas fa-hand-holding-usd"></i> Experiências</a>
+            <a href="#certificacoes"><i class="fas fa-tasks"></i> Certificações</a>
+            <a href="#habilidades"><i class="fas fa-tools"></i> Habilidades</a>
+            <a href="#softwares"><i class="fas fa-desktop"></i> Softwares</a>
+            <a href="#idiomas"><i class="fas fa-globe-americas"></i> Idiomas</a>
         </div>
+        
+        <span id="span-menu" onclick="openNav()">
+            <i class="fas fa-bars">
+                <a href="#">
+                    <img class="img-fluid"  src="images/leticia-helena.png" alt="profile picture">
+                </a>
+            </i>
+        </span>
     </nav>
 
     <div id="quem-sou" class="flex-container quem-sou">
@@ -103,8 +74,6 @@
             <img id="profile-pic" src="images/profile_pic.png" alt="profile pic">
         </div>
     </div>
-
-    <hr>
 
     <div id="contato" class="flex-container contato">
         <div class="attribution-div">
@@ -151,8 +120,6 @@
             </ul>
         </div>
     </div>
-
-    <hr>
 
     <div id="educacao" class="flex-container contato">
         <div class="group-of-skills">
@@ -294,8 +261,6 @@
         </div>
     </div>
 
-    <hr>
-
     <div id="experiencias" class="flex-container">
         <div class="experiences">
             <h1>Experiências</h1>
@@ -377,8 +342,6 @@
         </div>
     </div>
 
-    <hr>
-
     <div id="certificacoes" class="flex-container">
         <div class="experiences">
             <h1>Certificações</h1>
@@ -398,8 +361,6 @@
             </div>
         </div>
     </div>
-
-    <hr>
 
     <div id="habilidades" class="single-skill">
         <div class="experiences">
@@ -421,8 +382,6 @@
             </div>
         </div>
     </div>
-
-    <hr>
             
     <div id="softwares" class="flex-container contato">
         <div class="group-of-skills">
@@ -444,8 +403,6 @@
             <img class="vector-themes" src="images/softwares.jpg" alt="software theme">
         </div>
     </div>
-
-    <hr>
 
     <div id="idiomas" class="flex-container contato">
         <div class="attribution-div">

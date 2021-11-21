@@ -8,7 +8,6 @@
 /* variables */
 :root {
     --standard-font: 'Quicksand', sans-serif;
-    --title-font: 'Leckerli One', cursive;
 
     /* colors */
     --general-backgroud: #F5EFFB;
@@ -21,6 +20,7 @@
     --button-background-hover: #FF0040;
     --button-text-color: #F8E0E6;
     --font-color: #665;
+    --sidebar-background-color: #2e2e2e;
 
     /* sizes */
     --size: 4;
@@ -30,17 +30,6 @@ body {
     background-color: var(--general-backgroud);
     font-family: var(--standard-font);
     color: var(--font-color);
-}
-
-hr {
-    line-height: 1em;
-    outline: 0;
-    border: 0;
-    color: var(--header-item);
-    text-align: center;
-    height: 1.5em;
-    opacity: .5;
-    margin: 3em 0;
 }
 
 div img {
@@ -146,6 +135,45 @@ ul.cloud a:hover::before {
   width: 100%;
 }
 
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--sidebar-background-color);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;    
+}
+  
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--subtitle);
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav a:hover {
+    color: var(--button-text-color);
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
 .flex-container {
     display: flex;
     margin: auto;
@@ -163,14 +191,11 @@ nav {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
-#page-title {
-    width: 350px;
-}
-
-#header-menu-items li a {
+#span-menu {
+    font-size: 30px;
+    cursor: pointer;
     color: var(--header-item);
 }
-
 
 .quem-sou {
     height: 100vh;
