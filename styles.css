@@ -35,8 +35,8 @@ body {
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
-    bottom: 1em; /* Place the button at the bottom of the page */
-    right: 1em; /* Place the button 60px from the right */
+    bottom: 5%; /* Place the button at the bottom of the page */
+    right: 5%; /* Place the button 60px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
@@ -57,7 +57,7 @@ body {
 }
 
 .cloud-container {
-    height: 450px;
+    min-height: 25em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,8 +69,8 @@ ul.cloud {
     flex-wrap: wrap;
     justify-content: center;
     line-height: 2.5rem;
-    width: 900px;
-    margin-bottom: 30px;
+    max-width: 45em;
+    margin-bottom: 2em;
 }
 
 ul.cloud a {
@@ -186,7 +186,8 @@ nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    min-height: 80vh;
+    overflow-y: auto;
+    margin-top: 2em;
 }
 
 #span-menu {
@@ -229,12 +230,14 @@ h1 {
 .links-contato ul {
     font-size: 1.5em;
     letter-spacing: 0.1rem;
+    margin-bottom: 2em;
 }
 
 .attribution-div {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 2em 0;
 }
 
 .attribution {
@@ -292,7 +295,7 @@ h1 {
     border: transparent;
     font-size: 100%;
     color: var(--button-text-color);
-    margin-top: 5%;
+    margin: 5% 0;
     border-radius: 1.5em;
     padding: 2%;
     transition: transform .3s;
@@ -310,31 +313,23 @@ h1 {
 
 .single-skill-description {
     padding-left: 1em;
+    margin-bottom: 2em;
 }
 
-/* 
-
-
-PAREI AQUI
-
-
-*/
-
-
 .single-skill-activities {
-    margin: 15px 0;
+    margin: 0.5em 0;
     letter-spacing: 0.13em;
 }
 
 .habilities-button {
     background-color: var(--header-background);
-    border-radius: 30px;
-    width: 180px;
+    border-radius: 1em;
+    width: 10em;
     font-family: var(--standard-font);
-    font-size: 20px;
+    font-size: 1em;
     color: var(--header-item);
-    margin: 15px 15px 0 0;
-    padding: 10px;
+    margin: 0.5em 0.5em 0 0;
+    padding: 0.4em;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
 
@@ -345,26 +340,22 @@ PAREI AQUI
 
 .experiences {
     max-width: 90vw;
-    padding-left: 30px;
+    padding-left: 2em;
 }
 
 .certifications li::before {
     content: "📌";
 }
 
-#software-cloud {
-    width: 500px;
-}
-
 .languages-button {
     background-color: var(--header-background);
-    border-radius: 30px;
-    width: 400px;
-    height: 100px;
+    border-radius: 2em;
+    width: 12em;
+    height: 5em;
     font-family: var(--standard-font);
-    font-size: 20px;
+    font-size: 1.3em;
     color: var(--header-item);
-    margin: 20px;
+    margin: 1.2em;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
 
@@ -381,9 +372,10 @@ PAREI AQUI
 footer {
     display: flex;
     background-color: var(--header-background);
-    height: 10vh;
+    min-height: 11vh;
     align-items: center;
     justify-content: space-evenly;
+    margin-top: 20px;
     font-size: 1em;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
@@ -420,16 +412,12 @@ footer a:hover {
         justify-content: center;
     }
 
-    #myBtn {
-        right: 5em;
-    }
-
     .flex-container {
         flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
         min-height: 200vh;
         max-width: 90vw;
+        padding: 20px;
     }
 
     .texto-apresentacao {
