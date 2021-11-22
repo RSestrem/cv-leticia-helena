@@ -36,7 +36,7 @@ body {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 5%; /* Place the button at the bottom of the page */
-    right: 5%; /* Place the button 60px from the right */
+    right: 5%; /* Place the button 5% from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
@@ -51,7 +51,7 @@ body {
   }
   
 #myBtn:hover {
-    background-color: var(--button-background-hover); /* Add a dark-grey background on hover */
+    background-color: var(--button-background-hover);
     color: var(--general-backgroud);
     transform: scale(1.15);
 }
@@ -186,7 +186,6 @@ nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    overflow-y: auto;
     margin-top: 2em;
 }
 
@@ -284,6 +283,20 @@ h1 {
 .single-skill {
     font-size: 1.25em;
     letter-spacing: 0.1rem;
+}
+
+#portfolio {
+    flex-direction: column;
+    padding: 40px;
+}
+
+.carousel {
+    max-width: 50vw;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.carousel-inner img {
+    max-width: 50vw;
 }
 
 .single-skill h2 {
