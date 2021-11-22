@@ -317,7 +317,7 @@ h1 {
 .modal-button:hover {
     background-color: var(--button-background-hover);
     color: var(--general-backgroud);
-    transform: scale(1.15);
+    transform: scale(1.1);
 }
 
 .single-skill-description {
