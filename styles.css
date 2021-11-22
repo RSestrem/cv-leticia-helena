@@ -272,10 +272,6 @@ h1 {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-#educacao {
-    min-height: 100vh;
-}
-
 .group-of-skills {
     max-width: 50em;
 }
@@ -306,11 +302,11 @@ h1 {
 .modal-button {
     background-color: var(--button-background);
     border: transparent;
-    font-size: 100%;
+    font-size: 1.2em;
     color: var(--button-text-color);
-    margin: 5% 0;
+    margin: 1.5em 0;
     border-radius: 1.5em;
-    padding: 2%;
+    padding: 1em;
     transition: transform .3s;
 }
 
